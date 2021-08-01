@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+.app {
+  background-color: #111111;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__browse {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__list_result {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (min-width: $screen-size-md) {
+    flex-direction: row;
+
+    &__browse {
+      width: 70%;
+    }
+  
+    &__list_result {
+      width: 30%;
+    }
+  }
+}
